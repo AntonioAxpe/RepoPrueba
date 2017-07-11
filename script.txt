@@ -1,1 +1,0 @@
-http://santander.isban.dev.corp/SSOSantBCESimTokenAS/BtoChannelDriver.ssobto?dse_operationName=OP_SSOTokenGen&dse_parentContextName=&dse_processorState=initial&dse_nextEventName=start&URLTarget=http://localhost:9080/bschfycsuf/inicio.do?cdproduc=01&URLTargetFailure=http://localhost:9080/bschfycsuf/errlog.do
