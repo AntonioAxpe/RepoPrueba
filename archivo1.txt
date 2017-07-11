@@ -1,1 +1,89 @@
-http://santander.isban.dev.corp/SSOSantBCESimTokenAS/BtoChannelDriver.ssobto?dse_operationName=OP_SSOTokenGen&dse_parentContextName=&dse_processorState=initial&dse_nextEventName=start&URLTarget=http://localhost:9080/bschfycsuf/inicio.do?cdproduc=01&URLTargetFailure=http://localhost:9080/bschfycsuf/errlog.do
+## Comandos básicos GitHub
+
+-- Comprobar versión instalada de Git
+git --version
+
+-- Configurar información global de usuario
+git config --global user.name "nombre usuario"
+git config --global user.email "email_usuario@example.com"
+
+
+
+## Creación de repositorio con GitHub (local)
+
+git init
+
+-- añadir ficheros
+git add nombre-del-fichero
+
+-- realizar commit
+git commit -m 'mensaje_commit'
+
+-- comprobar estado del repositorio
+git status
+
+
+
+## Subir proyecto a un repositorio
+
+-- Subir a repositorio existente
+git remote add origin https://github.com/nombre_repositorio.git
+git push -u origin master
+
+
+
+## Ignorar archivos en Git
+
+- Crear el archivo '.gitignore' en la raíz del repositorio.
+- Dentro del nuevo archivo escribir el nombre de las carpetas y/o archivos 
+  a ser ignorados.
+                      ej: (carpeta)   MisDocumentos/
+                          (archivo)   texto.txt
+                          (extención) *.docx
+
+## Eliminar archivos del repositorio
+
+git rm -r --cached nombre_archivo
+
+git commit -m 'mensaje_commit_eliminación'
+
+
+
+## GitLog
+
+-- Consultar history de Log
+git log
+
+-- Consultar history de Log en una linea
+git log --oneline
+
+-- Ver números limitados de logs
+git log 3
+
+-- Ver información extendida de logs
+git log -p
+
+-- Ver informacion de un log en concreto
+git show <id_log>
+
+-- Visualizar brachs del repositorio
+git log --graph [--online]
+
+
+
+## Modificar último commit
+
+git commit --amend
+
+
+
+## Creación de TAGS en repositorio
+
+git tag v0.0.1 -m "Primera versión"
+git tag v0.0.2 -m "Segunda versión, cambios menores"
+
+-- Commitear tags
+git push origin master --tag
+
+-- Listar tags
+git tag
